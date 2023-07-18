@@ -3,7 +3,7 @@ from typing import List
 
 HYPEN_E_DOT= '-e .'
 
-def get_requirements(file_path:str)->List[str]: # getting the file path as a string and mentioning that it will return as a list 
+def get_requirements(file_path): # getting the file path as a string and mentioning that it will return as a list 
     # creating an empty list 
     requirements = []
     # opening the file with the open function and file as an object 
@@ -21,7 +21,7 @@ def get_requirements(file_path:str)->List[str]: # getting the file path as a str
     return requirements
 
 setup( 
-    name = "RegressorProject",
+    name = "source",
     version = "0.0.1",
     author = "Pankaj Singh",
     author_email= 'singh.pankaj0018@gmail.com',

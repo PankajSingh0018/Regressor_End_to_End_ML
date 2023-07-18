@@ -1,9 +1,4 @@
 pandas 
-numpy
-matplotlib
-plotly 
-seaborn 
-Flask 
+numpy  
 scikit-learn
-
-#-e .
+flask
