@@ -7,11 +7,11 @@ import pickle
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 
 # Add the path to the parent directory of the 'source' package folder
-module_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-sys.path.append(module_path)
+# module_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+# sys.path.append(module_path)
 
-from logger import logging 
-from  exception import CustomException
+from source.logger import logging 
+from  source.exception import CustomException
 
 
 def save_object( file_path, obj):

@@ -9,11 +9,11 @@ from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet
 module_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(module_path)
 
-from exception import CustomException
-from logger import logging
+from source.exception import CustomException
+from source.logger import logging
 
-from utils import save_object
-from utils import evaluate_model 
+from source.utils import save_object
+from source.utils import evaluate_model 
 
 from dataclasses import dataclass
 

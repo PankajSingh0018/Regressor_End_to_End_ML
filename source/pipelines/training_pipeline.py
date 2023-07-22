@@ -6,11 +6,11 @@ import pandas as pd
 module_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(module_path)
 
-from logger import logging
-from exception import CustomException
-from components.data_ingestion import DataIngestion
-from components.data_transformation import DataTransformation
-from components.model_trainer import ModelTrainer
+from source.logger import logging
+from source.exception import CustomException
+from source.components.data_ingestion import DataIngestion
+from source.components.data_transformation import DataTransformation
+from source.components.model_trainer import ModelTrainer
 
 
 
