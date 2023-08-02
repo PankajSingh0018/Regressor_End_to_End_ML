@@ -16,8 +16,8 @@ jobs:
     name: Continuous Integration
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
+      - name: ut Code
+        uses: actions/checkoutChecko@v3
 
       - name: Lint code
         run: echo "Linting repository"
@@ -58,14 +58,15 @@ jobs:
           # Build a docker container and
           # push it to ECR so that it can
           # be deployed to ECS.
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-          echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+          docker build -t $ECR_REGIEPOSITORY:$IMAGE_TAG
+          echo "::set-output name=imSTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          docker push $ECR_REGISTRY/$ECR_Rage::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
           
           
   Continuous-Deployment:
     needs: build-and-push-ecr-image
     runs-on: self-hosted
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v3
