@@ -12,8 +12,6 @@ app=application
 def home_page():
     return render_template('index.html')
 
-
-
 @app.route('/predict',methods=['GET','POST'])
 
 
